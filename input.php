@@ -21,7 +21,7 @@
         <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact us</a>
+        <a class="nav-link" href="input.php">Contact us</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="gaming.html">Gaming</a>
@@ -33,8 +33,7 @@
   </div>  
 </nav>
 
-<script
-  src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <script src="jquery.backstretch.min.js"></script>
 <script src="backstretch.js"></script>
 
@@ -45,22 +44,21 @@
   </div>
   <div class="row">
     <div class="column">
-      <label for="fname">Our email</label>
-      <input disabled style="background-color: white" type="text" placeholder="stu20245@ashs.school.nz">
-      <label for="lname">Our phone number</label>
-      <input disabled style="background-color: white" type="text" placeholder="0226760424">
-      <label for="email">Our address</label>
-      <input disabled style="background-color: white" type="text" placeholder="536 Albany Highway, Albany, Auckland 0632">
-      <img src="images/csgo-nuke-catwalk.jpg" width="100%" height="50%">
+      <label>Contact us directly!</label>
+      <p style="background-color: white;">
+      Our email:<br>stu20245@ashs.school.nz<br><br><br>
+      Our phone number:<br>0226760424<br><br><br>
+      Our address:<br>536 Albany Highway, Albany, Auckland 0632</p>
+      <img src="images/logo.png" width="100%" height="50%">
     </div>
     <div class="column">
-      <form action="/action_page.php">
+      <form method ="POST" action="insertDB.php" class="cf">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstName" placeholder="Your name..">
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastName" placeholder="Your last name..">
         <label for="email">Email</label>
-		    <input type="text" id="email" name="email" placeholder="Your email...">
+		<input type="text" id="email" name="email" placeholder="Your email...">
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
         <input type="submit" value="Submit">
@@ -68,7 +66,6 @@
     </div>
   </div>
 </div>
-
 
 </div>
 
